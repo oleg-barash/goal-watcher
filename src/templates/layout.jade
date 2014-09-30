@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/angular/angular.js')
+    script(type='text/javascript', src='/angular-ui-router/release/angular-ui-router.js')
+    script(type='text/javascript', src='/javascript/main.js')
+    script(type='text/javascript', src='/javascript/controllers/main.js')
+  body
+    block content
+
+    p(itemscope='')
+        |I’m going to the
+        span(itemprop="name" style="margin:2px")
+            |Salter Cane
+        |gig next week
+        |Excited!

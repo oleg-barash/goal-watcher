@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(ng-app='goal-watcher' ng-controller='main')
+      form(action='/finances',method='post')
+        div
+            fieldset(data-role='controlgroup')
+                label(for='value') Сумма
+                    input(id='value',type='text',value='',placeholder='0',name='value')
+            fieldset(data-role='controlgroup')
+                label(for='value') Тип
+                    input(id='type',type='radio', name='type', value='income')
+                    |Прибыль
+                    input(id='type',type='radio', name='type', value='consumption')
+                    |Затраты
+            input(type='submit')

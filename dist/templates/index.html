@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/angular/angular.js"></script>
+    <script type="text/javascript" src="/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/javascript/main.js"></script>
+    <script type="text/javascript" src="/javascript/controllers/main.js"></script>
+  </head>
+  <body>
+    <h1></h1>
+    <p>Welcome to </p>
+    <div ng-app="goal-watcher" ng-controller="main">
+      <form action="/finances" method="post">
+        <div>
+          <fieldset data-role="controlgroup">
+            <label for="value">Сумма
+              <input id="value" type="text" value="" placeholder="0" name="value">
+            </label>
+          </fieldset>
+          <fieldset data-role="controlgroup">
+            <label for="value">Тип
+              <input id="type" type="radio" name="type" value="income">Прибыль
+              <input id="type" type="radio" name="type" value="consumption">Затраты
+            </label>
+          </fieldset>
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+    <p itemscope="">I’m going to the<span itemprop="name" style="margin:2px">Salter Cane</span>gig next week
+      Excited!
+    </p>
+  </body>
+</html>
